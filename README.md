@@ -5,7 +5,7 @@ In this repository, the Fourier Neural Operator (FNO) is examined in the context
 
 ### The pcN-MCMC algorithm
 
-The pCN-MCMC algoritm used for parameters estimation in the inverse Bayesian problem is presented below. In the pseudo-code below, $y$ are observed data and $u_{new}$ are the predicted data denoted by $f$ in section 7.2.
+The pCN-MCMC algoritm used for parameters estimation in the inverse Bayesian problem is presented below. In the pseudo-code, $y$ is the observed data, which is a noisy velocity field, and $u_{new}$ is the predicted data.
 
 <img width="684" alt="image" src="https://github.com/alexkarakozis/FNO/assets/69156399/bfd6505c-2e3c-4e44-831e-641c89a3c57f">
 
@@ -19,7 +19,7 @@ The results for the melt rate parameter estimation are presented below.
 
 
 ### Conclusions
-The limitation of the FNO is that the Fast Fourier Transform (FFT) requires uniform meshes (recatngular grids). In conclusion, the FNO can accurately and rapidly predict solutions and estimate parameters of the ice stream model. In contrast to the solver, the FNO does not need retraining if initial conditions change slightly, making it more adaptable. It can possibly be trained on sensor data without knowledge of the underlying PDE, allowing for scientific discovery. The FNO can complement traditional solvers in ice sheet modelling as it is computationally less expensive and highly accurate.  
+In conclusion, the FNO can accurately and rapidly predict solutions and estimate parameters of the ice stream model. In contrast to the solver, the FNO does not need retraining if initial conditions change slightly, making it more adaptable. It can possibly be trained on sensor data without knowledge of the underlying PDE, allowing for scientific discovery. The FNO can complement traditional solvers in ice sheet modelling as it is computationally less expensive and highly accurate. The limitation of the FNO is that the Fast Fourier Transform (FFT) requires uniform meshes (recatngular grids).
 
 Further information and details can be provided upon request.
 
