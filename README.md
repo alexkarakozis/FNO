@@ -19,17 +19,11 @@ The results for the melt rate parameter estimation are presented below.
 
 
 ### Conclusions
-The FNO can accurately and rapidly predict solutions and estimate parameters of the ice stream model. In contrast to the solver, the FNO does not need retraining if initial conditions change slightly, making it more adaptable. It can possibly be trained on sensor data without knowledge of the underlying PDE, allowing for scientific discovery. The FNO can complement traditional solvers in ice sheet modelling as it is computationally less expensive and highly accurate. The limitation of the FNO is that the Fast Fourier Transform (FFT) requires uniform meshes (recatngular grids).
+The FNO can accurately and rapidly predict solutions and estimate parameters of the ice stream model. In contrast to the solver, the FNO does not need retraining if initial conditions change slightly, making it more adaptable. It can possibly be trained on sensor data without knowledge of the underlying PDE, allowing for scientific discovery. The FNO can complement traditional solvers in ice sheet modelling as it is computationally less expensive and highly accurate. The limitation of the FNO is that the Fast Fourier Transform (FFT) requires uniform meshes (rectangular grids).
 
 Further information and details can be provided upon request.
 
 ### Build Requirements & References
-
-This repository is an application of the FNO and is based on
 - https://arxiv.org/abs/2010.08895
 - https://github.com/neuraloperator/neuraloperator/tree/master
-
-which develop and implement the FNO, respectively.
-
-The ice sheet modelling is based on the ice sheet simulation software: 
 - https://icepack.github.io/
